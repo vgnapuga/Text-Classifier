@@ -1,0 +1,17 @@
+text,label
+"Какой язык лучше выучить после Python — Rust или Go?",programming
+"async и await в Python позволяют писать неблокирующий код",programming
+"Java - строго-типизированный язык программирования",programming
+"Типизация в TypeScript делает код читаемее и безопаснее",programming
+"ls -l показывает список файлов с подробностями, включая права",linux
+"chmod +x script.sh делает скрипт исполняемым",linux
+"systemd заменил init в большинстве современных дистрибутивов",linux
+"apt install sl — обязательно на каждом сервере",linux
+"Вчера запустил fine-tuning LLaMA 3 на своем ноутбуке",ml
+"Для классификации текста использовал TfidfVectorizer + NaiveBayes",ml
+"Нужно больше данных, иначе модель переобучается",ml
+"Лучше использовать stratified split, чтобы сохранить пропорции классов",ml
+"Какой кулер лучше взять для Ryzen 9 7950X?",hardware
+"DDR5 пока дорогая, но уже становится стандартом",hardware
+"На NVIDIA RTX 4070 Ti LLM-ки обучаются быстрее, чем на CPU",hardware
+"Стоит ли брать БП на 750W для RTX 3080?",hardware
