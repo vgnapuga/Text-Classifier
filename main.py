@@ -1,5 +1,9 @@
+from src.pipeline import TextClassificationPipeline
+
+
 def main() -> None:
-    pass
+    pipeline = TextClassificationPipeline("data/data.csv")
+    pipeline.run(True)
 
 
 if (__name__ == "__main__"):

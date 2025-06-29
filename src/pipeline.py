@@ -11,7 +11,7 @@ class TextClassificationPipeline:
         self.classifier = TextClassifier()
 
 
-    def run(self, evaluate: bool) -> None:
+    def run(self, evaluate: bool = True) -> None:
         print("[1] Загрузка данных...")
         data = self.loader.load_data()
 

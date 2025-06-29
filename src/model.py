@@ -12,8 +12,10 @@ class TextClassifier:
 
     def __init__(self):
         self.model = Pipeline([
-            ("tfidf", TfidfVectorizer()),
-            ("clf", MultinomialNB)
+            ("tfidf", TfidfVectorizer(
+                lowercase=True,
+            )),
+            ("clf", MultinomialNB())
         ])
 
 

@@ -13,4 +13,4 @@ class TextPreprocessor:
         X: pd.Series = self.data["text"]
         y: pd.Series = self.data["label"]
 
-        return train_test_split(X, y, test_size=.3, random_state=42)
+        return train_test_split(X, y, test_size=.3, random_state=42, stratify=y)
