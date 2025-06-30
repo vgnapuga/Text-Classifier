@@ -7,15 +7,14 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import classification_report
 
+from config import MODEL_PATH
+
 from typing import Union
 
 
 class TextClassifier:
 
-    _data_path: str = "data/data.csv"
-
-
-    def __init__(self, model_path: str = "model/model.joblib"):
+    def __init__(self, model_path: str = MODEL_PATH):
         self.model_path: str = model_path
         self.model: Union[Pipeline, None] = None
 

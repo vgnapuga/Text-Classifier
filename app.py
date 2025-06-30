@@ -2,16 +2,18 @@ from flask import Flask, request, render_template
 from src.model import TextClassifier
 from src.pipeline import TextClassificationPipeline
 
+from config import MODEL_PATH, DATA_PATH
+
 app = Flask(__name__)
 
-model_path = "model/model.joblib"
+model_path: str = MODEL_PATH
 classifier = TextClassifier(model_path=model_path)
 
 try:
     classifier.load()
 except FileNotFoundError:
     print("[!] Модель не найдена. Запускаем pipeline...")
-    pipeline = TextClassificationPipeline(data_path="data/data.csv")
+    pipeline = TextClassificationPipeline(data_path=DATA_PATH)
     pipeline.run(evaluate=False)
     classifier.load()
 
