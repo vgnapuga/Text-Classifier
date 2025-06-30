@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Классификатор текста</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+
+  <body>
+
+    <div class="sidebar">
+      <h3>Классы:</h3>
+      <ul>
+        <li>programming</li>
+        <li>linux</li>
+        <li>ml</li>
+        <li>hardware</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h1>Введите текст для классификации</h1>
+
+      <form method="post">
+        <textarea name="text" rows="5" cols="60" placeholder="Введите текст здесь..."></textarea><br><br>
+        <button type="submit">Классифицировать</button>
+      </form>
+
+      {% if prediction %}
+      <h2>Класс: <em>{{ prediction }}</em></h2>
+      {% endif %}
+
+      <div class="footer">
+        Шаврин Н.С. ВГУ ФКН 2.1.2
+      </div>
+    </div>
+
+  </body>
+
+</html>
